@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+#! /usr/bin/python
+
+import sys,os
+
+usage = """%s <file>
+$1
+""" %sys.argv[0]
+
+if len(sys.argv) <2: sys.exit(usage)
+$0File = sys.argv[1]
